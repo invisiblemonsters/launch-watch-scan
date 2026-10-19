@@ -1,0 +1,54 @@
+name: Paid instant scan ($5 in BTC)
+description: Automated Launch Watch risk scan of one Robinhood Chain or Base contract, posted here within minutes of 1 confirmation.
+title: "[Instant scan] <contract address>"
+labels: ["paid-scan"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Price: 6,100 sats** for one scan ($5 at a fixed rate of $81,771/BTC; payments from **5,490 sats** are accepted).
+        **Scan pack: 24,500 sats** for 5 scans ($20; accepted 22,050 to 26,950 sats). One transaction ID then works for 5 instant-scan issues opened from the same GitHub account.
+
+        1. Send BTC (Bitcoin mainnet) to **`bc1qk43phw0cl63a2pqxssnakwsnuxu0swwjvmm9r0`**. This is the only payment address; it matches the [Get reviewed](https://invisiblemonsters.github.io/launch-watch/get-reviewed.html) page and the [Launch Watch README](https://github.com/invisiblemonsters/launch-watch#ordering).
+        2. Fill in this form with the transaction ID. A bot checks the payment on mempool.space, waits for **1 confirmation** (re-checked every 15 minutes), runs the scanner and posts the report as a comment, then closes the issue.
+
+        **This issue and the report are public.** The report contains the same automated risk signals as the public Launch Watch pages (score, band, every check with its evidence link). It is not an audit or a guarantee. Never post vulnerabilities here; use [private vulnerability reporting](https://github.com/invisiblemonsters/launch-watch/security/advisories/new).
+        Payments through mixers or CoinJoin, and launches in excluded hosting clusters, are declined and refunded manually. No other refunds for completed scans.
+  - type: dropdown
+    id: chain
+    attributes:
+      label: Chain
+      options: ["Robinhood Chain (chain ID 4663)", "Base (chain ID 8453)"]
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Contract address
+      description: The token or contract to scan (0x followed by 40 hex characters).
+      placeholder: "0x..."
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Project website (optional)
+      description: Used for the hosting and domain-age checks. Leave empty to use the website listed on DexScreener, if any.
+      placeholder: "https://..."
+  - type: input
+    id: txid
+    attributes:
+      label: BTC transaction ID
+      description: The 64-character transaction ID of your payment (find it in your wallet or on mempool.space).
+      placeholder: "e.g. 4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"
+    validations:
+      required: true
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand the report is an automated, public risk scan at one block, not an audit, a guarantee or financial advice.
+          required: true
+        - label: I paid only to bc1qk43phw0cl63a2pqxssnakwsnuxu0swwjvmm9r0.
+          required: true

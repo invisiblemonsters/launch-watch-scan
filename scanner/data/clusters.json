@@ -1,0 +1,105 @@
+{
+ "_note": "Hosting watchlist. Entries are operator-supplied seeds plus evidence gathered by Launch Watch. A match is a RISK SIGNAL (shared infrastructure), not proof of wrongdoing by any team.",
+ "clusters": [
+  {
+   "id": "hstgr-187.127.98.242",
+   "ips": [
+    "187.127.98.242"
+   ],
+   "label": "Shared single VPS (Hostinger AS47583, srv1994888.hstgr.cloud)",
+   "seed_source": "Launch Watch hosting watchlist",
+   "members": [
+    {
+     "project": "Sluicebox",
+     "domain": "sluicebox.xyz",
+     "x": "https://x.com/Sluiceboxgame"
+    },
+    {
+     "project": "Dripyard",
+     "domain": "dripyard.xyz",
+     "x": "https://x.com/dripyardxyz"
+    },
+    {
+     "project": "Pawnhood",
+     "domain": "pawnhood.shop",
+     "x": "https://x.com/Pawnhoodshop"
+    },
+    {
+     "project": "Hoptrail",
+     "domain": "hoptrail.live",
+     "x": "https://x.com/Hoptraildotlive"
+    },
+    {
+     "project": "Sealslab",
+     "domain": "sealslab.xyz",
+     "x": "https://x.com/sealslab"
+    },
+    {
+     "project": "Swardbow",
+     "domain": "swardbow.world",
+     "x": "https://x.com/swardbow"
+    },
+    {
+     "project": "Markup Machine",
+     "domain": "markupmachine.xyz",
+     "x": "https://x.com/markupmachine"
+    }
+   ],
+   "verified": "All 7 domains resolved to 187.127.98.242 via https://dns.google/resolve on 2026-10-14 ~19:40 PT; ipinfo.io shows AS47583 Hostinger, hostname srv1994888.hstgr.cloud.",
+   "deployers": []
+  }
+ ],
+ "shared_cdn_prefixes": {
+  "_note": "Anycast/PaaS ranges shared by thousands of unrelated sites. An IP match inside these is NOT treated as overlap.",
+  "cloudflare": [
+   "104.16.",
+   "104.17.",
+   "104.18.",
+   "104.19.",
+   "104.20.",
+   "104.21.",
+   "104.22.",
+   "104.23.",
+   "104.24.",
+   "104.25.",
+   "104.26.",
+   "104.27.",
+   "172.64.",
+   "172.65.",
+   "172.66.",
+   "172.67.",
+   "172.68.",
+   "172.69.",
+   "188.114.",
+   "190.93.",
+   "197.234.",
+   "198.41.",
+   "162.158.",
+   "162.159.",
+   "141.101.",
+   "108.162.",
+   "173.245."
+  ],
+  "vercel": [
+   "76.76.21.",
+   "216.150.1.",
+   "216.198.79.",
+   "64.29.17.",
+   "66.33.60."
+  ],
+  "netlify": [
+   "75.2.60.",
+   "99.83.190.",
+   "13.52.188."
+  ],
+  "github_pages": [
+   "185.199.108.",
+   "185.199.109.",
+   "185.199.110.",
+   "185.199.111."
+  ],
+  "fastly": [
+   "151.101."
+  ]
+ }
+}

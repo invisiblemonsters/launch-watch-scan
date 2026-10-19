@@ -1,0 +1,7 @@
+{
+ "_note": "Verified reference contracts. An unverified contract whose runtime bytecode has the same length and >=97% identical bytes (differences = constructor immutables such as name/symbol) is treated as the same template. Add entries as you verify them.",
+ "templates": [
+  {"name": "PonsV2LauncherToken (Pons launchpad token)", "chain": "robinhood", "address": "0xb2917143b2c85fe31d4535b01eb13cb5e5b6e481",
+   "evidence": "https://robinhoodchain.blockscout.com/address/0xb2917143b2c85fe31d4535b01eb13cb5e5b6e481?tab=contract"}
+ ]
+}

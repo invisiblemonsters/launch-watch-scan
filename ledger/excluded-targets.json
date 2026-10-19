@@ -1,0 +1,8 @@
+{
+ "_note": "Targets for which paid instant scans are not offered (declined politely; any payment is refunded manually). Free public pages are unaffected.",
+ "targets": [
+  {"key": "robinhood:0x577a7187f115ea70f91fddc533fcf01a9cb72610"},
+  {"key": "robinhood:0x778e66f6eb1e2afdedf96a2ece2a479b7f2e896b"},
+  {"key": "robinhood:0xcdb4ee224ca4db25767ffad5b922f014a4905300"}
+ ]
+}

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Verified badge ($50) or 24h manual review ($150)
+    url: https://github.com/invisiblemonsters/launch-watch/issues/new?template=request-review.yml
+    about: Manual work by a person; ordered in the main Launch Watch repo.
+  - name: Pricing and badge meaning
+    url: https://invisiblemonsters.github.io/launch-watch/get-reviewed.html
+    about: All tiers, the payment address and what a badge does and does not mean.
+  - name: Report a vulnerability privately
+    url: https://github.com/invisiblemonsters/launch-watch/security/advisories/new
+    about: Never post vulnerabilities in a public issue.
