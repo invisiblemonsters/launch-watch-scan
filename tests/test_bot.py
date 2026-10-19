@@ -6,7 +6,7 @@ import paid_scan as P
 def t_parse():
     body = "### Chain\n\nRobinhood Chain (chain ID 4663)\n\n### Contract address\n\n0x8192a554fe2e371af32978cc18e04add26c641dc\n\n### BTC transaction ID\n\n_No response_\n\n### Acknowledgements\n\n- [X] ok"
     f = P.parse_form(body)
-    assert f == {"chain": "Robinhood Chain (chain ID 4663)", "address": "0x8192a554fe2e371af32978cc18e04add26c641dc", "txid": ""}, f
+    assert f == {"chain": "Robinhood Chain (chain ID 4663)", "address": "0x8192a554fe2e371af32978cc18e04add26c641dc", "txid": "", "site": ""}, f
     assert P.CHAIN_OPTS[f["chain"].lower()] == "robinhood"
 
 def t_coinjoin():
